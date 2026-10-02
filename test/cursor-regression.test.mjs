@@ -11,6 +11,13 @@ test('revision, query reference, cursor bytes and install serialization match th
  assert.equal(page.nextCursor,'eyJyZXZpc2lvbiI6IjU5MTU3NjVhOWYzNTAzNDUwODg3YTI0ZjUwZDkyMzFkZDkxMWFjNGMyMWE1ZTlmMWUzZjA4MmE0MTAxZWFmODciLCJzZWxlY3Rpb24iOiIzN2M1ZGM4MTFjNDhiMTllZDhjMTU0YmM3M2RhMDkzMDA5MDE0YjNlYjQ0MDE5OTZkMWY5MmY5Mzk5YThhNDI1Iiwib2Zmc2V0IjoyfQ')
  assert.deepEqual(Object.keys(page),['revision','queryRef','items','nextCursor','total'])
  assert.equal(JSON.stringify(store.installation(packageReference(page.items[1]))),'{"method":"hat/catalog/install","params":{"repositoryId":"hat-1","expected":{"sourceId":"local","sourceRevision":1,"catalogDigestSha256":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","packageSha256":"1111111111111111111111111111111111111111111111111111111111111111"}}}')
+ const second=store.query({limit:2,cursor:page.nextCursor})
+ assert.deepEqual(second.items.map(item=>item.repositoryId),['hat-2','hat-3'])
+ assert.equal(second.revision,page.revision)
+ assert.equal(second.total,5)
+ const last=store.query({limit:2,cursor:second.nextCursor})
+ assert.deepEqual(last.items.map(item=>item.repositoryId),['hat-4'])
+ assert.equal(last.nextCursor,null)
 })
 
 test('cursor parsing preserves invalid syntax versus stale/incorrect shape errors',()=>{
