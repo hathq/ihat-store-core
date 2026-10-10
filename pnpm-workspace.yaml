@@ -1,0 +1,4 @@
+packages:
+  - "."
+  - "packages/ihat-store-source"
+linkWorkspacePackages: true

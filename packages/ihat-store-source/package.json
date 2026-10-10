@@ -11,11 +11,28 @@
     "LICENSE-PREVIOUS"
   ],
   "exports": {
-    ".": "./src/index.mjs"
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hathq/ihat-store-core.git",
+    "url": "git+https://github.com/hathq/ihat-store-core.git",
     "directory": "packages/ihat-store-source"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "description": "Read an explicitly supplied owner catalog RPC and reject source changes during observation",
+  "dependencies": {
+    "@hathq/ihat-store-core": "0.10.0"
   }
 }
