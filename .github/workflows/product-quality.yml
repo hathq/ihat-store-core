@@ -25,6 +25,9 @@ jobs:
             --test-coverage-include='src/**/*.mjs' \
             --test-reporter=spec --test-reporter-destination=stdout \
             --test-reporter=lcov --test-reporter-destination=reports/coverage.lcov test/*.test.mjs
+      - name: Consolidated catalog source regressions
+        working-directory: packages/ihat-store-source
+        run: node --test test/source-regression.test.mjs
       - name: Native GitHub coverage artifact
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
