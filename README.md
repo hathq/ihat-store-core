@@ -1,28 +1,48 @@
 # @hathq/ihat-store-core
 
-Build HAT search and detail views from an explicitly observed catalog.
-
-## What you can do
-
-- Query bounded catalog results with revision-bound cursors.
-- Create an exact installation request for owner review.
-
-## Current scope
-
-Search is literal filtering. The package prepares a request; it does not install a role or infer semantic meaning.
-
-Package distribution is not activated by this documentation. Use the checked-in source and the declared dependency versions; published availability must be verified separately.
-
-## Getting started
-
-Use the package manager matching the checked-in lockfile and the Node.js version declared in `package.json` or the development configuration. Run from this repository:
+Build immutable HAT catalog search/detail views from an owner-verified observation. Queries use bounded literal filtering, stable ordering and revision-bound cursors. Installation is an exact request for the owner to review, not an action performed by this package.
 
 ```sh
-pnpm install --frozen-lockfile
+npm install @hathq/ihat-store-core@0.10.0
 ```
 
-## Documentation and source
+```typescript
+import { createStore, packageReference } from '@hathq/ihat-store-core'
+import type { CatalogObservation } from '@hathq/ihat-store-core'
 
-[Usage guide](docs/getting-started.md)
+// Obtain this observation through your authenticated catalog owner.
+function searchCatalog(observation: CatalogObservation) {
+  const store = createStore(observation)
+  const page = store.query({ text: 'mail', order: 'name', limit: 16 })
+  const first = page.items.find(candidate => !candidate.installed)
+  return {
+    page,
+    request: first && store.catalog.artifactAcquisitionAvailable
+      ? store.installation(packageReference(first)) : null
+  }
+}
+```
 
-[Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
+The owner must verify signatures, publisher identity, source admission and catalog provenance before supplying the observation. This library validates finite field and document bounds, preserves declared assurance, copies the snapshot and deeply freezes retained state. It does not authenticate a publisher, fetch a catalog, install a package, execute code or infer semantic meaning.
+
+## Interfaces and package boundaries
+
+- `createStore`: retain a bounded observation and expose search/detail/installation-request operations.
+- `packageReference`: select the exact repository/package/version/SHA-256 tuple.
+- `limits`: explicit candidate, category, pagination, cursor and document budgets.
+- `@hathq/ihat-store-source`: separate adapter for an explicitly supplied Hatter owner RPC; checks source consistency across reads.
+
+Type declarations are shipped separately from the ESM implementation. Node.js 22 or later is required. Revision-bound cursors must be discarded after a catalog or query change. Run installation requests only through the owner's admission and authorization checks.
+
+## Development
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm run typecheck
+pnpm -r --include-workspace-root test
+pnpm audit --audit-level=low
+```
+
+Development links the exact contract version within this repository. Distribution manifests contain public registry versions and no sibling checkout requirement.
+
+[Security reporting](SECURITY.md) · [License](LICENSE) · [Notices](NOTICE)

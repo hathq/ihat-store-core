@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto'
 export const limits=Object.freeze({candidates:128,categories:32,page:32,queryBytes:128,cursorBytes:256,documentBytes:524288})
 const fail=code=>{throw Object.assign(Error(code),{code})}
 const text=(v,n=512)=>{if(typeof v!=='string'||!v||Buffer.byteLength(v)>n||!v.isWellFormed())fail('InvalidStoreObservation');return v}
-const digest=v=>{if(!/^[a-f0-9]{64}$/.test(v))fail('InvalidStoreObservation');return v}
+const digest=v=>{if(typeof v!=='string'||!/^[a-f0-9]{64}$/.test(v))fail('InvalidStoreObservation');return v}
 const array=(v,n)=>{if(!Array.isArray(v)||v.length>n)fail('StoreLimitExceeded');return v}
 const hash=v=>createHash('sha256').update(JSON.stringify(v)).digest('hex')
 const freeze=v=>{if(v&&typeof v==='object'){Object.freeze(v);for(const item of Object.values(v))freeze(item)}return v}
