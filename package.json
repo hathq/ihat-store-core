@@ -11,6 +11,29 @@
     "LICENSE-PREVIOUS"
   ],
   "exports": {
-    ".": "./src/index.mjs"
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hathq/ihat-store-core.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "description": "Bounded immutable HAT catalog search, detail and owner installation-request contracts",
+  "packageManager": "pnpm@10.29.3",
+  "devDependencies": {
+    "typescript": "5.9.3"
   }
 }

@@ -5,3 +5,4 @@ packages:
   - "packages/ihat-store-web"
   - "packages/ihat-store-scenes"
   - "packages/ihat-store-tests"
+linkWorkspacePackages: true
