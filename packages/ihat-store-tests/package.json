@@ -23,8 +23,8 @@
     "@hathq/ihat-store-scenes": "file:../ihat-store-scenes",
     "@hathq/ihat-store-local": "file:../ihat-store-local",
     "@hathq/ihat-store-web": "file:../ihat-store-web",
-    "@hathq/delivery-server": "file:../../../delivery-server",
-    "@hathq/delivery-client": "file:../../../delivery-server/packages/delivery-client",
+    "@hathq/delivery-server": "0.10.0",
+    "@hathq/delivery-client": "0.10.0",
     "@playwright/test": "1.62.1",
     "esbuild": "0.28.1"
   },
