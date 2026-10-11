@@ -8,7 +8,23 @@
       "owner_repository": "hathq/ihat-store-core",
       "subpath": "packages/ihat-store-source",
       "source_head": "e61a4096dcffb36a346743fbc623d17f6bb68ae4",
-      "history_ref": "refs/consolidated/ihat-store-source/original-HEAD"
+      "local_history_ref": "refs/consolidated/ihat-store-source/original-HEAD",
+      "history_archive": {
+        "path": "source-history/ihat-store-source/original.bundle",
+        "format": "git-bundle-v2",
+        "sha256": "20a5ee4ed248961786dde8cb1af47bfea7cb6f8f4e8c24ee47704a716a1cc56a",
+        "original_head": "e61a4096dcffb36a346743fbc623d17f6bb68ae4",
+        "observed_source_refs": [
+          {
+            "sha": "633cc932c748475add7ca70b54b78c2322a84586",
+            "ref": "refs/heads/coela/oss-maintenance-2026-10-02"
+          },
+          {
+            "sha": "e61a4096dcffb36a346743fbc623d17f6bb68ae4",
+            "ref": "refs/heads/main"
+          }
+        ]
+      }
     },
     {
       "id": "ihat-store-local",
@@ -17,7 +33,23 @@
       "owner_repository": "hathq/ihat-store-core",
       "subpath": "packages/ihat-store-local",
       "source_head": "e358262b50c65f0ab4ea15b2c57c38e0e6ab970e",
-      "history_ref": "refs/consolidated/ihat-store-local/original-HEAD"
+      "local_history_ref": "refs/consolidated/ihat-store-local/original-HEAD",
+      "history_archive": {
+        "path": "source-history/ihat-store-local/original.bundle",
+        "format": "git-bundle-v2",
+        "sha256": "14271b23502094a1b9942c3751395c2f92baf9940563047d33ca0fa7a6af0fe0",
+        "original_head": "e358262b50c65f0ab4ea15b2c57c38e0e6ab970e",
+        "observed_source_refs": [
+          {
+            "sha": "6b62f6769bef161f8f306fa55c5a477063816e9f",
+            "ref": "refs/heads/coela/oss-maintenance-2026-10-02"
+          },
+          {
+            "sha": "e358262b50c65f0ab4ea15b2c57c38e0e6ab970e",
+            "ref": "refs/heads/main"
+          }
+        ]
+      }
     },
     {
       "id": "ihat-store-web",
@@ -26,7 +58,23 @@
       "owner_repository": "hathq/ihat-store-core",
       "subpath": "packages/ihat-store-web",
       "source_head": "0beeeea28dbb23c23d98d19a598bd02ec3cb3d8b",
-      "history_ref": "refs/consolidated/ihat-store-web/original-HEAD"
+      "local_history_ref": "refs/consolidated/ihat-store-web/original-HEAD",
+      "history_archive": {
+        "path": "source-history/ihat-store-web/original.bundle",
+        "format": "git-bundle-v2",
+        "sha256": "0b4ca8fad774c06a6f3f9508d6c1046198e54c7780dcd35ce52c55fb953e858f",
+        "original_head": "0beeeea28dbb23c23d98d19a598bd02ec3cb3d8b",
+        "observed_source_refs": [
+          {
+            "sha": "706c9789bd40c21485e4c16fabe83e88dfb71ba1",
+            "ref": "refs/heads/coela/oss-maintenance-2026-10-02"
+          },
+          {
+            "sha": "0beeeea28dbb23c23d98d19a598bd02ec3cb3d8b",
+            "ref": "refs/heads/main"
+          }
+        ]
+      }
     },
     {
       "id": "ihat-store-scenes",
@@ -35,7 +83,19 @@
       "owner_repository": "hathq/ihat-store-core",
       "subpath": "packages/ihat-store-scenes",
       "source_head": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
-      "history_ref": "refs/consolidated/ihat-store-scenes/original-HEAD"
+      "local_history_ref": "refs/consolidated/ihat-store-scenes/original-HEAD",
+      "history_archive": {
+        "path": "source-history/ihat-store-scenes/original.bundle",
+        "format": "git-bundle-v2",
+        "sha256": "24b2221e15de77b57e4ef2a00c849a2fa30957f25f15def62663e79ae95b9d2e",
+        "original_head": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
+        "observed_source_refs": [
+          {
+            "sha": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
+            "ref": "refs/heads/main"
+          }
+        ]
+      }
     },
     {
       "id": "ihat-store-tests",
@@ -44,8 +104,20 @@
       "owner_repository": "hathq/ihat-store-core",
       "subpath": "packages/ihat-store-tests",
       "source_head": "72b9246457b76846dd7fc81fa0ebe6fb72d64a39",
-      "history_ref": "refs/consolidated/ihat-store-tests/original-HEAD"
+      "local_history_ref": "refs/consolidated/ihat-store-tests/original-HEAD",
+      "history_archive": {
+        "path": "source-history/ihat-store-tests/original.bundle",
+        "format": "git-bundle-v2",
+        "sha256": "ca40ec526339d344fda08843f9c9ff06cd78f6704785423524e9f6c027331552",
+        "original_head": "72b9246457b76846dd7fc81fa0ebe6fb72d64a39",
+        "observed_source_refs": [
+          {
+            "sha": "72b9246457b76846dd7fc81fa0ebe6fb72d64a39",
+            "ref": "refs/heads/main"
+          }
+        ]
+      }
     }
   ],
-  "status": "Maintained source consolidation; Rust/Vue ports and independent registry publication remain pending."
+  "status": "Source consolidated and maintained; original Git history is preserved in source-history bundles. Registry availability is recorded separately for each released package and version."
 }
