@@ -1,0 +1,29 @@
+{
+  "name": "@hathq/ihat-store-scenes",
+  "version": "0.10.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "LICENSE-PREVIOUS"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "dependencies": {
+    "@hathq/ihat-store-core": "0.10.0",
+    "@hathq/projection-contracts": "0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hathq/ihat-store-core.git",
+    "directory": "packages/ihat-store-scenes"
+  },
+  "types": "./src/index.d.mts"
+}
