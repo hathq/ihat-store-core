@@ -1,0 +1,121 @@
+{
+  "schema": "source-history-preservation-v1",
+  "observed_at": "2026-10-11",
+  "source_repository": "hathq/ihat-store-scenes",
+  "repository_id": 1400854573,
+  "visibility": "public",
+  "archived": true,
+  "source_head": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
+  "source_refs": [
+    {
+      "sha": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
+      "ref": "refs/heads/main"
+    }
+  ],
+  "bundle_sha256": "24b2221e15de77b57e4ef2a00c849a2fa30957f25f15def62663e79ae95b9d2e",
+  "all_observed_refs_preserved": true,
+  "issues": [
+    {
+      "url": "https://api.github.com/repos/hathq/ihat-store-scenes/issues/1",
+      "repository_url": "https://api.github.com/repos/hathq/ihat-store-scenes",
+      "labels_url": "https://api.github.com/repos/hathq/ihat-store-scenes/issues/1/labels{/name}",
+      "comments_url": "https://api.github.com/repos/hathq/ihat-store-scenes/issues/1/comments",
+      "events_url": "https://api.github.com/repos/hathq/ihat-store-scenes/issues/1/events",
+      "html_url": "https://github.com/hathq/ihat-store-scenes/pull/1",
+      "id": 5673302396,
+      "node_id": "PR_kwDOU39YLc8AAAABGOstvw",
+      "number": 1,
+      "title": "Clarify usage, outcomes and implementation scope",
+      "user": {
+        "login": "coela-oss",
+        "id": 147021942,
+        "node_id": "U_kgDOCMNgdg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/147021942?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/coela-oss",
+        "html_url": "https://github.com/coela-oss",
+        "followers_url": "https://api.github.com/users/coela-oss/followers",
+        "following_url": "https://api.github.com/users/coela-oss/following{/other_user}",
+        "gists_url": "https://api.github.com/users/coela-oss/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/coela-oss/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/coela-oss/subscriptions",
+        "organizations_url": "https://api.github.com/users/coela-oss/orgs",
+        "repos_url": "https://api.github.com/users/coela-oss/repos",
+        "events_url": "https://api.github.com/users/coela-oss/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/coela-oss/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "labels": [],
+      "state": "closed",
+      "locked": true,
+      "assignees": [],
+      "milestone": null,
+      "comments": 0,
+      "created_at": "2026-10-02T05:28:42Z",
+      "updated_at": "2026-10-02T05:44:05Z",
+      "closed_at": "2026-10-02T05:44:04Z",
+      "assignee": null,
+      "author_association": "MEMBER",
+      "issue_field_values": [],
+      "type": null,
+      "active_lock_reason": null,
+      "draft": false,
+      "pull_request": {
+        "url": "https://api.github.com/repos/hathq/ihat-store-scenes/pulls/1",
+        "html_url": "https://github.com/hathq/ihat-store-scenes/pull/1",
+        "diff_url": "https://github.com/hathq/ihat-store-scenes/pull/1.diff",
+        "patch_url": "https://github.com/hathq/ihat-store-scenes/pull/1.patch",
+        "merged_at": "2026-10-02T05:44:04Z"
+      },
+      "body": "Readers can see what the repository enables, how to start, and which behavior is implemented. The README and usage guide retain declared dependency prerequisites and distinguish source verification from product or deployment acceptance.\n\nValidation: local Markdown/link checks, source disclosure scan, unchanged license/notice, and existing OSS policy checks where defined. No package publication or deployment is requested.\n",
+      "closed_by": {
+        "login": "coela-oss",
+        "id": 147021942,
+        "node_id": "U_kgDOCMNgdg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/147021942?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/coela-oss",
+        "html_url": "https://github.com/coela-oss",
+        "followers_url": "https://api.github.com/users/coela-oss/followers",
+        "following_url": "https://api.github.com/users/coela-oss/following{/other_user}",
+        "gists_url": "https://api.github.com/users/coela-oss/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/coela-oss/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/coela-oss/subscriptions",
+        "organizations_url": "https://api.github.com/users/coela-oss/orgs",
+        "repos_url": "https://api.github.com/users/coela-oss/repos",
+        "events_url": "https://api.github.com/users/coela-oss/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/coela-oss/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "reactions": {
+        "url": "https://api.github.com/repos/hathq/ihat-store-scenes/issues/1/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "timeline_url": "https://api.github.com/repos/hathq/ihat-store-scenes/issues/1/timeline",
+      "performed_via_github_app": null,
+      "state_reason": null
+    }
+  ],
+  "issue_comments": [
+    {
+      "issue": 1,
+      "content": []
+    }
+  ],
+  "limits": [
+    "Issue snapshots preserve observed API records, not unavailable external discussions.",
+    "This is preservation evidence, not deletion approval or registry availability."
+  ]
+}
