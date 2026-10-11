@@ -12,7 +12,7 @@
       "history_archive": {
         "path": "source-history/ihat-store-source/original.bundle",
         "format": "git-bundle-v2",
-        "sha256": "20a5ee4ed248961786dde8cb1af47bfea7cb6f8f4e8c24ee47704a716a1cc56a",
+        "sha256": "adbf5796870c41602083907d8f4a7bd63291add9bf7d5f86036b5d6d806a14c5",
         "original_head": "e61a4096dcffb36a346743fbc623d17f6bb68ae4",
         "observed_source_refs": [
           {
@@ -22,6 +22,16 @@
           {
             "sha": "e61a4096dcffb36a346743fbc623d17f6bb68ae4",
             "ref": "refs/heads/main"
+          }
+        ],
+        "observed_source_pull_refs": [
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "633cc932c748475add7ca70b54b78c2322a84586"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "174ad1cb4f8c7c8b961dae4daf1dd2caecf7626b"
           }
         ]
       }
@@ -37,7 +47,7 @@
       "history_archive": {
         "path": "source-history/ihat-store-local/original.bundle",
         "format": "git-bundle-v2",
-        "sha256": "14271b23502094a1b9942c3751395c2f92baf9940563047d33ca0fa7a6af0fe0",
+        "sha256": "bdcd972c9f7f8238048c5b5ebdde25e21a88b38f2fb5e75856142f6949cba9c7",
         "original_head": "e358262b50c65f0ab4ea15b2c57c38e0e6ab970e",
         "observed_source_refs": [
           {
@@ -47,6 +57,16 @@
           {
             "sha": "e358262b50c65f0ab4ea15b2c57c38e0e6ab970e",
             "ref": "refs/heads/main"
+          }
+        ],
+        "observed_source_pull_refs": [
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "6b62f6769bef161f8f306fa55c5a477063816e9f"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "6a2e255ce8398b0d8b1b89f4c200d147a99b27da"
           }
         ]
       }
@@ -62,7 +82,7 @@
       "history_archive": {
         "path": "source-history/ihat-store-web/original.bundle",
         "format": "git-bundle-v2",
-        "sha256": "0b4ca8fad774c06a6f3f9508d6c1046198e54c7780dcd35ce52c55fb953e858f",
+        "sha256": "447726eef9916a6f43bbea7ab2238ecc920c85f5467be253016a5a8f6a6e1ff5",
         "original_head": "0beeeea28dbb23c23d98d19a598bd02ec3cb3d8b",
         "observed_source_refs": [
           {
@@ -72,6 +92,16 @@
           {
             "sha": "0beeeea28dbb23c23d98d19a598bd02ec3cb3d8b",
             "ref": "refs/heads/main"
+          }
+        ],
+        "observed_source_pull_refs": [
+          {
+            "ref": "refs/pull/2/head",
+            "sha": "706c9789bd40c21485e4c16fabe83e88dfb71ba1"
+          },
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "2041ccc08d414919a131ae630f0b81b272169387"
           }
         ]
       }
@@ -87,12 +117,18 @@
       "history_archive": {
         "path": "source-history/ihat-store-scenes/original.bundle",
         "format": "git-bundle-v2",
-        "sha256": "24b2221e15de77b57e4ef2a00c849a2fa30957f25f15def62663e79ae95b9d2e",
+        "sha256": "c35fa0e039c3a812c3a1b05a77a0a201e060c7477072e4947942a37d46a5cd35",
         "original_head": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
         "observed_source_refs": [
           {
             "sha": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
             "ref": "refs/heads/main"
+          }
+        ],
+        "observed_source_pull_refs": [
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "bccaba97ef6e28d872c9d7033dc19353caf2a1d7"
           }
         ]
       }
@@ -108,12 +144,18 @@
       "history_archive": {
         "path": "source-history/ihat-store-tests/original.bundle",
         "format": "git-bundle-v2",
-        "sha256": "ca40ec526339d344fda08843f9c9ff06cd78f6704785423524e9f6c027331552",
+        "sha256": "0bc06cfeb592705bcf0600f6261c2978d71aee52a3cb3c4f3df245e372ac94a1",
         "original_head": "72b9246457b76846dd7fc81fa0ebe6fb72d64a39",
         "observed_source_refs": [
           {
             "sha": "72b9246457b76846dd7fc81fa0ebe6fb72d64a39",
             "ref": "refs/heads/main"
+          }
+        ],
+        "observed_source_pull_refs": [
+          {
+            "ref": "refs/pull/1/head",
+            "sha": "7444b6f5c07e4acaada288264543cfaa3a23afad"
           }
         ]
       }
