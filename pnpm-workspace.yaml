@@ -1,0 +1,7 @@
+packages:
+  - "."
+  - "packages/ihat-store-source"
+  - "packages/ihat-store-local"
+  - "packages/ihat-store-web"
+  - "packages/ihat-store-scenes"
+  - "packages/ihat-store-tests"

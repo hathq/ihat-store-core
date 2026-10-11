@@ -1,0 +1,51 @@
+{
+  "schema": "source-consolidation-v1",
+  "components": [
+    {
+      "id": "ihat-store-source",
+      "owner_id": "ihat-store-core",
+      "original_repository": "hathq/ihat-store-source",
+      "owner_repository": "hathq/ihat-store-core",
+      "subpath": "packages/ihat-store-source",
+      "source_head": "e61a4096dcffb36a346743fbc623d17f6bb68ae4",
+      "history_ref": "refs/consolidated/ihat-store-source/original-HEAD"
+    },
+    {
+      "id": "ihat-store-local",
+      "owner_id": "ihat-store-core",
+      "original_repository": "hathq/ihat-store-local",
+      "owner_repository": "hathq/ihat-store-core",
+      "subpath": "packages/ihat-store-local",
+      "source_head": "e358262b50c65f0ab4ea15b2c57c38e0e6ab970e",
+      "history_ref": "refs/consolidated/ihat-store-local/original-HEAD"
+    },
+    {
+      "id": "ihat-store-web",
+      "owner_id": "ihat-store-core",
+      "original_repository": "hathq/ihat-store-web",
+      "owner_repository": "hathq/ihat-store-core",
+      "subpath": "packages/ihat-store-web",
+      "source_head": "0beeeea28dbb23c23d98d19a598bd02ec3cb3d8b",
+      "history_ref": "refs/consolidated/ihat-store-web/original-HEAD"
+    },
+    {
+      "id": "ihat-store-scenes",
+      "owner_id": "ihat-store-core",
+      "original_repository": "hathq/ihat-store-scenes",
+      "owner_repository": "hathq/ihat-store-core",
+      "subpath": "packages/ihat-store-scenes",
+      "source_head": "19d5cad4508c73be55f5d0a12da38c3f65479b28",
+      "history_ref": "refs/consolidated/ihat-store-scenes/original-HEAD"
+    },
+    {
+      "id": "ihat-store-tests",
+      "owner_id": "ihat-store-core",
+      "original_repository": "hathq/ihat-store-tests",
+      "owner_repository": "hathq/ihat-store-core",
+      "subpath": "packages/ihat-store-tests",
+      "source_head": "72b9246457b76846dd7fc81fa0ebe6fb72d64a39",
+      "history_ref": "refs/consolidated/ihat-store-tests/original-HEAD"
+    }
+  ],
+  "status": "Maintained source consolidation; Rust/Vue ports and independent registry publication remain pending."
+}

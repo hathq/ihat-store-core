@@ -1,0 +1,37 @@
+{
+  "name": "@hathq/ihat-store-tests",
+  "version": "0.10.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "files": [
+    "src",
+    "test",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "LICENSE-PREVIOUS"
+  ],
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@hathq/ihat-store-core": "file:../..",
+    "@hathq/ihat-store-source": "file:../ihat-store-source",
+    "@hathq/ihat-store-scenes": "file:../ihat-store-scenes",
+    "@hathq/ihat-store-local": "file:../ihat-store-local",
+    "@hathq/ihat-store-web": "file:../ihat-store-web",
+    "@hathq/delivery-server": "file:../../../delivery-server",
+    "@hathq/delivery-client": "file:../../../delivery-server/packages/delivery-client",
+    "@playwright/test": "1.62.1",
+    "esbuild": "0.28.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hathq/ihat-store-core.git",
+    "directory": "packages/ihat-store-tests"
+  },
+  "private": true
+}

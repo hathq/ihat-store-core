@@ -1,0 +1,24 @@
+{
+  "name": "@hathq/ihat-store-web",
+  "version": "0.10.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "LICENSE-PREVIOUS"
+  ],
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "dependencies": {
+    "@hathq/ihat-store-core": "0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hathq/ihat-store-core.git",
+    "directory": "packages/ihat-store-web"
+  }
+}
