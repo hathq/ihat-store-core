@@ -1,4 +1,4 @@
-import type {SceneProjection} from '@hathq/projection-contracts/client'
+import type {SceneProjection} from '@zixcel/projection-contracts/client'
 
 export interface PackageReference {
   readonly repositoryId:string

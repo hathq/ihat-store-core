@@ -1,5 +1,5 @@
 // Declarative iHat site projection. No HTML/components, installation or transport.
-import {produce,scene,canonical} from '@hathq/projection-contracts'
+import {produce,scene,canonical} from '@zixcel/projection-contracts'
 import {packageReference} from '@hathq/ihat-store-core'
 export function storeScene(store,query={}){
  const page=store.query(query),source={owner:'hatter/catalog',ref:store.source.sourceId,revision:store.revision,kind:'catalog'},key='ihat:store:'+page.queryRef

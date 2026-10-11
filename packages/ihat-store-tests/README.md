@@ -15,7 +15,7 @@ Package distribution is not activated by this documentation. Use the checked-in 
 
 ## Getting started
 
-The manifest currently requires locally supplied package archives: `@hathq/ihat-store-core`, `@hathq/ihat-store-source`, `@hathq/ihat-store-scenes`, `@hathq/ihat-store-local`, `@hathq/ihat-store-web`, `@hathq/delivery-server`, `@hathq/delivery-client`. These archives are excluded from Git. Obtain the exact approved dependency artifacts before installing; a fresh clone alone is not sufficient. Registry distribution remains pending.
+This private acceptance workspace uses sibling source packages within ihat-store-core and pins the external Hatter delivery adapters to official npm versions (`@hathq/delivery-server@0.10.0`, `@hathq/delivery-client@0.10.0`). No neighboring delivery repository or untracked archive is required.
 
 Use the package manager matching the checked-in lockfile and the Node.js version declared in `package.json` or the development configuration. Run from this repository:
 
