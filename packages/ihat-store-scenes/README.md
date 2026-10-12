@@ -28,3 +28,7 @@ pnpm install --frozen-lockfile
 [Usage guide](docs/getting-started.md)
 
 [Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
+
+## Release provenance
+
+Starting with 0.10.1, releases use GitHub Actions OIDC trusted publishing from `hathq/ihat-store-core` (`publish-npm.yml`), without a stored npm publishing token. The workflow verifies reviewed archive hashes and requires npm provenance metadata. Check the published version on npm and verify registry signatures and provenance with `npm audit signatures` in an installed consumer project. Package runtime behavior and API contracts are unchanged by this release.

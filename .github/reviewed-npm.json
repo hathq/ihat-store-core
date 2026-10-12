@@ -1,0 +1,12 @@
+{
+  "repository": "hathq/ihat-store-core",
+  "packages": [
+    {
+      "name": "@hathq/ihat-store-scenes",
+      "version": "0.10.1",
+      "directory": "packages/ihat-store-scenes",
+      "source_sha": "d83e37b66896c1d6aec3d1b8df874765f6f62d0c",
+      "sha256": "d7068d904360b4c7ab922c79db7d3ec5426a2046f0a97352e2f721b4e9eb9a0e"
+    }
+  ]
+}
