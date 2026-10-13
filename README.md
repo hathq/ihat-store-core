@@ -46,3 +46,5 @@ pnpm audit --audit-level=low
 Development links the exact contract version within this repository. Distribution manifests contain public registry versions and no sibling checkout requirement.
 
 [Security reporting](SECURITY.md) · [License](LICENSE) · [Notices](NOTICE)
+
+[OSS responsibility and source completion](docs/oss-source-contract.md) defines the supported package boundary and required acceptance. It does not declare unexecuted source, distribution or production checks complete.
