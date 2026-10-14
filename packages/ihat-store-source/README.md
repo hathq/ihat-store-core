@@ -3,7 +3,7 @@
 Observe a Hatter owner's selected catalog while detecting source selection or registry revision changes during the read. Supply the authenticated owner RPC yourself; this adapter starts no service, opens no network connection and stores no credentials.
 
 ```sh
-npm install @hathq/ihat-store-source@0.10.0
+npm install @hathq/ihat-store-source
 ```
 
 ```typescript
