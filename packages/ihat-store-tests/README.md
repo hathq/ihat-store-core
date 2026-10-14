@@ -15,7 +15,7 @@ Package distribution is not activated by this documentation. Use the checked-in 
 
 ## Getting started
 
-This private acceptance workspace uses sibling source packages within ihat-store-core and pins the external Hatter delivery adapters to official npm versions (`@hathq/delivery-server@0.10.0`, `@hathq/delivery-client@0.10.0`). No neighboring delivery repository or untracked archive is required.
+This private acceptance workspace uses sibling source packages within ihat-store-core and pins the external Hatter delivery adapters to official npm versions (`@hathq/delivery-server`, `@hathq/delivery-client`). No neighboring delivery repository or untracked archive is required.
 
 Use the package manager matching the checked-in lockfile and the Node.js version declared in `package.json` or the development configuration. Run from this repository:
 

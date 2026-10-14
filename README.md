@@ -3,7 +3,7 @@
 Build immutable HAT catalog search/detail views from an owner-verified observation. Queries use bounded literal filtering, stable ordering and revision-bound cursors. Installation is an exact request for the owner to review, not an action performed by this package.
 
 ```sh
-npm install @hathq/ihat-store-core@0.10.0
+npm install @hathq/ihat-store-core
 ```
 
 ```typescript
@@ -48,3 +48,6 @@ Development links the exact contract version within this repository. Distributio
 [Security reporting](SECURITY.md) · [License](LICENSE) · [Notices](NOTICE)
 
 [OSS responsibility and source completion](docs/oss-source-contract.md) defines the supported package boundary and required acceptance. It does not declare unexecuted source, distribution or production checks complete.
+
+Dependency updates: [repository policy](docs/dependency-updates.md).
+Registry releases: [version tags and GitHub OIDC](docs/registry-release.md).

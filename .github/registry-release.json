@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "repository": "hathq/ihat-store-core",
+  "defaultBranch": "main",
+  "requiredWorkflows": [
+    "oss-policy.yml",
+    "prepare-npm-artifact.yml",
+    "product-quality.yml"
+  ],
+  "packages": [
+    {
+      "ecosystem": "npm",
+      "manifest": "package.json",
+      "name": "@hathq/ihat-store-core",
+      "installDirectory": "."
+    },
+    {
+      "ecosystem": "npm",
+      "manifest": "packages/ihat-store-local/package.json",
+      "name": "@hathq/ihat-store-local",
+      "installDirectory": "."
+    },
+    {
+      "ecosystem": "npm",
+      "manifest": "packages/ihat-store-scenes/package.json",
+      "name": "@hathq/ihat-store-scenes",
+      "installDirectory": "."
+    },
+    {
+      "ecosystem": "npm",
+      "manifest": "packages/ihat-store-source/package.json",
+      "name": "@hathq/ihat-store-source",
+      "installDirectory": "."
+    },
+    {
+      "ecosystem": "npm",
+      "manifest": "packages/ihat-store-web/package.json",
+      "name": "@hathq/ihat-store-web",
+      "installDirectory": "."
+    }
+  ]
+}
