@@ -20,5 +20,11 @@
     "type": "git",
     "url": "https://github.com/hathq/ihat-store-core.git",
     "directory": "packages/ihat-store-web"
-  }
+  },
+  "keywords": [
+    "artifact-registry",
+    "web-components",
+    "user-interface",
+    "javascript"
+  ]
 }

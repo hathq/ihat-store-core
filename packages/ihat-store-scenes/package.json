@@ -25,5 +25,11 @@
     "url": "git+https://github.com/hathq/ihat-store-core.git",
     "directory": "packages/ihat-store-scenes"
   },
-  "types": "./src/index.d.mts"
+  "types": "./src/index.d.mts",
+  "keywords": [
+    "artifact-registry",
+    "user-interface",
+    "state-management",
+    "javascript"
+  ]
 }

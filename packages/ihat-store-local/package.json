@@ -21,5 +21,11 @@
     "type": "git",
     "url": "https://github.com/hathq/ihat-store-core.git",
     "directory": "packages/ihat-store-local"
-  }
+  },
+  "keywords": [
+    "artifact-registry",
+    "local-first",
+    "artifact-verification",
+    "javascript"
+  ]
 }
