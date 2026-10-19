@@ -34,5 +34,11 @@
   "description": "Read an explicitly supplied owner catalog RPC and reject source changes during observation",
   "dependencies": {
     "@hathq/ihat-store-core": "0.10.0"
-  }
+  },
+  "keywords": [
+    "artifact-registry",
+    "provenance",
+    "source-adapter",
+    "javascript"
+  ]
 }

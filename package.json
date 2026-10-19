@@ -35,5 +35,11 @@
   "packageManager": "pnpm@10.29.3",
   "devDependencies": {
     "typescript": "5.9.3"
-  }
+  },
+  "keywords": [
+    "artifact-registry",
+    "package-discovery",
+    "provenance",
+    "typescript"
+  ]
 }
