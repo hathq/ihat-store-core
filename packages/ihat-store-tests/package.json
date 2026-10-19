@@ -23,10 +23,10 @@
     "@hathq/ihat-store-scenes": "file:../ihat-store-scenes",
     "@hathq/ihat-store-local": "file:../ihat-store-local",
     "@hathq/ihat-store-web": "file:../ihat-store-web",
-    "@hathq/delivery-server": "0.10.0",
-    "@hathq/delivery-client": "0.10.0",
-    "@playwright/test": "1.62.1",
-    "esbuild": "0.28.1"
+    "@hathq/delivery-server": "0.10.1",
+    "@hathq/delivery-client": "0.10.1",
+    "@playwright/test": "1.64.1",
+    "esbuild": "0.28.2"
   },
   "repository": {
     "type": "git",
