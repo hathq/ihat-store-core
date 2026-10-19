@@ -34,7 +34,7 @@
   "description": "Bounded immutable HAT catalog search, detail and owner installation-request contracts",
   "packageManager": "pnpm@10.29.3",
   "devDependencies": {
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "keywords": [
     "artifact-registry",
