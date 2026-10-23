@@ -27,8 +27,8 @@ importers:
         specifier: 0.10.0
         version: link:../..
       '@zixcel/projection-contracts':
-        specifier: 0.10.3
-        version: 0.10.3
+        specifier: 0.10.5
+        version: 0.10.5
 
   packages/ihat-store-source:
     dependencies:
@@ -413,8 +413,8 @@ packages:
     resolution: {integrity: sha512-6dnTIrV1KgeEY4cUedDFrawrER36Mrj+fiOBYEUp5UTVtmbzsfiJoNDxxDTxrVgFtPgMiDZj6gwYJ13a7P4uyQ==}
     engines: {node: '>=22'}
 
-  '@zixcel/projection-contracts@0.10.3':
-    resolution: {integrity: sha512-/e6iJFvZc/9ZoZXSxjEZfm67BYR8pZ342GVO2BASsJDAkRwOS+hsrdb9GW+5oTWTp1o9wmkt3un1uxo3WYVEVw==}
+  '@zixcel/projection-contracts@0.10.5':
+    resolution: {integrity: sha512-MchW6jgxj8kkd9OeQ41Pg+J86EDtjjklAdsgIW90XhyhRfGADtjVkoWdWeixzDxVA/3T4WojioVQWeDGRxpazQ==}
     engines: {node: '>=22'}
 
   '@zixcel/view-delivery-contracts@0.10.0':
@@ -430,6 +430,9 @@ packages:
 
   ohash@2.0.11:
     resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
+
+  ohash@2.0.12:
+    resolution: {integrity: sha512-65S/5gk9YSsaRjcyf7Nfa6h/d3E8/1gslpXfI4W7Dxn/oap8IKRuNT5VXkLQ1YFKIEg4apRY4Pj6aiwFzrDdmw==}
 
   playwright-core@1.64.1:
     resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
@@ -579,7 +582,7 @@ snapshots:
   '@hathq/ihat-store-scenes@file:packages/ihat-store-scenes':
     dependencies:
       '@hathq/ihat-store-core': 0.10.0
-      '@zixcel/projection-contracts': 0.10.3
+      '@zixcel/projection-contracts': 0.10.5
 
   '@hathq/ihat-store-source@0.10.0':
     dependencies:
@@ -678,10 +681,10 @@ snapshots:
       '@zixcel/interaction': 0.10.1
       ohash: 2.0.11
 
-  '@zixcel/projection-contracts@0.10.3':
+  '@zixcel/projection-contracts@0.10.5':
     dependencies:
       '@zixcel/interaction': 0.10.1
-      ohash: 2.0.11
+      ohash: 2.0.12
 
   '@zixcel/view-delivery-contracts@0.10.0':
     dependencies:
@@ -730,6 +733,8 @@ snapshots:
       '@esbuild/win32-x64': 0.28.2
 
   ohash@2.0.11: {}
+
+  ohash@2.0.12: {}
 
   playwright-core@1.64.1: {}
 
