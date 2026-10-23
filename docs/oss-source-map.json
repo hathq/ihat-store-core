@@ -194,20 +194,20 @@
               "condition": null
             },
             {
-              "name": "Isolate the published core and source packages",
-              "run": "package_root=\"$RUNNER_TEMP/public-packages\"\nmkdir -p \"$package_root/packages\"\ncp package.json pnpm-lock.yaml tsconfig.json README.md LICENSE LICENSE-PREVIOUS NOTICE \"$package_root/\"\ncp -R src test \"$package_root/\"\ncp -R packages/ihat-store-source \"$package_root/packages/\"\nprintf '%s\\n' 'packages:' '  - \".\"' '  - \"packages/ihat-store-source\"' 'linkWorkspacePackages: true' > \"$package_root/pnpm-workspace.yaml\"\necho \"PUBLIC_PACKAGE_ROOT=$package_root\" >> \"$GITHUB_ENV\"\n",
+              "name": "Isolate all published catalog packages",
+              "run": "package_root=\"$RUNNER_TEMP/public-packages\"\nmkdir -p \"$package_root/packages\"\ncp package.json pnpm-lock.yaml tsconfig.json README.md LICENSE LICENSE-PREVIOUS NOTICE \"$package_root/\"\ncp -R src test \"$package_root/\"\ncp -R packages/ihat-store-source packages/ihat-store-scenes \"$package_root/packages/\"\nprintf '%s\\n' 'packages:' '  - \".\"' '  - \"packages/ihat-store-source\"' '  - \"packages/ihat-store-scenes\"' 'linkWorkspacePackages: true' > \"$package_root/pnpm-workspace.yaml\"\necho \"PUBLIC_PACKAGE_ROOT=$package_root\" >> \"$GITHUB_ENV\"\n",
               "uses": null,
               "condition": null
             },
             {
-              "name": "Validate the published pair independently of unpublished candidates",
+              "name": "Validate published catalog packages independently of unpublished candidates",
               "run": "pnpm install --frozen-lockfile --ignore-scripts\npnpm run typecheck\npnpm -r --include-workspace-root test\npnpm audit --audit-level=low\n",
               "uses": null,
               "condition": null
             },
             {
               "name": "Pack exact source distributions without lifecycle hooks",
-              "run": "mkdir \"$GITHUB_WORKSPACE/outgoing\"\nnpm pack --ignore-scripts --json --pack-destination \"$GITHUB_WORKSPACE/outgoing\"\n(cd packages/ihat-store-source && npm pack --ignore-scripts --json --pack-destination \"$GITHUB_WORKSPACE/outgoing\")\nprintf '%s\\n' \"$GITHUB_SHA\" > \"$GITHUB_WORKSPACE/outgoing/source-sha.txt\"\n(cd \"$GITHUB_WORKSPACE/outgoing\" && sha256sum ./*.tgz > SHA256SUMS)\n",
+              "run": "mkdir \"$GITHUB_WORKSPACE/outgoing\"\nnpm pack --ignore-scripts --json --pack-destination \"$GITHUB_WORKSPACE/outgoing\"\n(cd packages/ihat-store-source && npm pack --ignore-scripts --json --pack-destination \"$GITHUB_WORKSPACE/outgoing\")\n(cd packages/ihat-store-scenes && npm pack --ignore-scripts --json --pack-destination \"$GITHUB_WORKSPACE/outgoing\")\nprintf '%s\\n' \"$GITHUB_SHA\" > \"$GITHUB_WORKSPACE/outgoing/source-sha.txt\"\n(cd \"$GITHUB_WORKSPACE/outgoing\" && sha256sum ./*.tgz > SHA256SUMS)\n",
               "uses": null,
               "condition": null
             },
