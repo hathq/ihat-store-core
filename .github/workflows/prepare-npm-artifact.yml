@@ -26,16 +26,16 @@ jobs:
           echo "NPM_CONFIG_GLOBALCONFIG=$RUNNER_TEMP/global.npmrc" >> "$GITHUB_ENV"
           echo "NPM_CONFIG_REGISTRY=https://registry.npmjs.org" >> "$GITHUB_ENV"
       - run: npm install --global --ignore-scripts --no-audit --no-fund pnpm@10.29.3
-      - name: Isolate the published core and source packages
+      - name: Isolate all published catalog packages
         run: |
           package_root="$RUNNER_TEMP/public-packages"
           mkdir -p "$package_root/packages"
           cp package.json pnpm-lock.yaml tsconfig.json README.md LICENSE LICENSE-PREVIOUS NOTICE "$package_root/"
           cp -R src test "$package_root/"
-          cp -R packages/ihat-store-source "$package_root/packages/"
-          printf '%s\n' 'packages:' '  - "."' '  - "packages/ihat-store-source"' 'linkWorkspacePackages: true' > "$package_root/pnpm-workspace.yaml"
+          cp -R packages/ihat-store-source packages/ihat-store-scenes "$package_root/packages/"
+          printf '%s\n' 'packages:' '  - "."' '  - "packages/ihat-store-source"' '  - "packages/ihat-store-scenes"' 'linkWorkspacePackages: true' > "$package_root/pnpm-workspace.yaml"
           echo "PUBLIC_PACKAGE_ROOT=$package_root" >> "$GITHUB_ENV"
-      - name: Validate the published pair independently of unpublished candidates
+      - name: Validate published catalog packages independently of unpublished candidates
         working-directory: ${{ env.PUBLIC_PACKAGE_ROOT }}
         run: |
           pnpm install --frozen-lockfile --ignore-scripts
@@ -48,6 +48,7 @@ jobs:
           mkdir "$GITHUB_WORKSPACE/outgoing"
           npm pack --ignore-scripts --json --pack-destination "$GITHUB_WORKSPACE/outgoing"
           (cd packages/ihat-store-source && npm pack --ignore-scripts --json --pack-destination "$GITHUB_WORKSPACE/outgoing")
+          (cd packages/ihat-store-scenes && npm pack --ignore-scripts --json --pack-destination "$GITHUB_WORKSPACE/outgoing")
           printf '%s\n' "$GITHUB_SHA" > "$GITHUB_WORKSPACE/outgoing/source-sha.txt"
           (cd "$GITHUB_WORKSPACE/outgoing" && sha256sum ./*.tgz > SHA256SUMS)
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
